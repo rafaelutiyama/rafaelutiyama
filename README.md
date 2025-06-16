@@ -1,4 +1,5 @@
-![Banner](https://via.placeholder.com/800x200.png?text=Bem+vindo+ao+meu+perfil!)
+![Banner](https://github.com/rafaelutiyama/rafaelutiyama/blob/main/bannerRafael.png)
+
 
 # Rafael UtIyama
 
