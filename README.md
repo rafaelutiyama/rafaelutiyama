@@ -1,16 +1,14 @@
-## Hi there 👋
+![Banner](https://via.placeholder.com/800x200.png?text=Bem+vindo+ao+meu+perfil!)
 
-<!--
-**rafaelutiyama/rafaelutiyama** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+# Rafael UtIyama
 
-Here are some ideas to get you started:
+> Estudante de Ciência da Computação. Buscando unir lógica e criatividade no desenvolvimento de soluções inovadoras.
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-blue?logo=linkedin)](https://linkedin.com/in/seu-usuario)
+[![Instagram](https://img.shields.io/badge/Instagram-E4405F?logo=instagram&logoColor=white)](https://instagram.com/rafaelutiyama)
+
+## 🧠 Conhecimentos
+![HTML](https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white)
+![CSS](https://img.shields.io/badge/CSS3-1572B6?logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black)
+![Node.js](https://img.shields.io/badge/Node.js-339933?logo=node.js&logoColor=white)
