@@ -1,4 +1,5 @@
 <img src="https://raw.githubusercontent.com/rafaelutiyama/rafaelutiyama/main/bannerRafael.png" width="1000" height="550" />
+
 # 👋 Olá! Eu sou o Rafael Utiyama
 
 🎓 Estudante de **Ciência da Computação**  
