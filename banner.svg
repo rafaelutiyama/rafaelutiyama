@@ -1,4 +1,4 @@
-<svg viewBox="0 0 100 30" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1000" height="300" style="background:#0d1b2a; border-radius:8px;">
+<svg viewBox="0 0 120 30" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1000" height="250" style="background:#0d1b2a; border-radius:8px;">
 
   <style>
     rect.headerRect {
@@ -15,53 +15,60 @@
     }
 
     .wave {
-      animation: wave 3s linear infinite;
+      animation: wave 8s linear infinite;
       fill: #778beb;
       opacity: 0.8;
       cursor: pointer;
+      filter: drop-shadow(0 0 6px #a6b1e1);
       transition: fill 0.3s;
-      filter: drop-shadow(0 0 4px #a6b1e1);
     }
     .wave:hover {
       fill: #4a69bd;
-      filter: drop-shadow(0 0 6px #6688ff);
+      filter: drop-shadow(0 0 10px #6688ff);
     }
 
     #wave2 {
       animation-direction: reverse;
-      animation-duration: 5s;
+      animation-duration: 12s;
       opacity: 0.6;
     }
     #wave3 {
-      animation-duration: 7s;
+      animation-duration: 16s;
       opacity: 0.35;
     }
 
     @keyframes wave {
-      to { transform: translateX(-100%); }
+      from { transform: translateX(0); }
+      to { transform: translateX(-40%); }
     }
   </style>
 
   <defs>
-    <path id="wave" d="M 0,8 
-      C 25,8 25,12 50,12 
-      75,12 75,8 100,8 
-      v 20 h -100 z" />
+    <path id="wave" d="
+      M0 10 
+      C15 5, 30 15, 45 10 
+      S75 5, 90 10 
+      S120 15, 135 10
+      V 30 
+      H0 
+      Z
+    "/>
   </defs>
 
-  <!-- Retângulo abaixo do texto -->
-  <rect class="headerRect" width="70" height="6" rx="2" x="15" y="20" />
+  <!-- Retângulo atrás do texto -->
+  <rect class="headerRect" width="80" height="7" rx="2" x="20" y="20" />
 
   <!-- Ondas animadas -->
-  <use id="wave3" class="wave" xlink:href="#wave" x="0" y="2" />
-  <use id="wave2" class="wave" xlink:href="#wave" x="0" y="4" />
+  <use class="wave" xlink:href="#wave" x="0" y="2" />
+  <use id="wave2" class="wave" xlink:href="#wave" x="40" y="4" />
+  <use id="wave3" class="wave" xlink:href="#wave" x="80" y="3" />
 
-  <!-- Animação do nome -->
-  <path id="nameTyping" d="m15,15 h0">
-    <animate attributeName="d" from="m15,15 h0" to="m15,15 h70" dur="4.2s" begin="0s" fill="freeze" />
+  <!-- Texto animado -->
+  <path id="nameTyping" d="m20,16 h0">
+    <animate attributeName="d" from="m20,16 h0" to="m20,16 h75" dur="4.5s" begin="0s" fill="freeze" />
   </path>
 
-  <text font-family="Courier New" font-size="5" fill="#f0f8ff" font-weight="bold" letter-spacing="0.8" style="filter: drop-shadow(0 0 3px #a6b1e1);">
+  <text font-family="Courier New" font-size="6" fill="#f0f8ff" font-weight="bold" letter-spacing="0.8" style="filter: drop-shadow(0 0 4px #a6b1e1);">
     <textPath xlink:href="#nameTyping">Rafael Utiyama</textPath>
   </text>
 
