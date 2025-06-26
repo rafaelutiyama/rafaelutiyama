@@ -1,4 +1,4 @@
-<img src="https://raw.githubusercontent.com/rafaelutiyama/rafaelutiyama/main/bannerRafael.png" width="1000" height="550" />
+<img src="banner.svg"></img>
 
 # 👋 Olá! Eu sou o Rafael Utiyama
 
