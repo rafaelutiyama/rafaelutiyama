@@ -1,21 +1,67 @@
-<svg width="1000" height="200" viewBox="0 0 1000 200" xmlns="http://www.w3.org/2000/svg">
-  <!-- Definição do gradiente animado -->
+<svg viewBox="0 0 115 35" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="600" height="130" style="background:#0d1b2a; border-radius:10px;">
+
+  <style>
+    rect.headerRect {
+      fill: #1b263b;
+      fill-opacity: 0.6;
+      rx: 3;
+      transition: fill-opacity 0.3s, fill 0.3s;
+      cursor: pointer;
+      filter: drop-shadow(0 0 3px #406882);
+    }
+    rect.headerRect:hover {
+      fill: #415a77;
+      fill-opacity: 0.8;
+    }
+
+    .wave {
+      animation: wave 3s linear infinite;
+      fill: #778beb;
+      opacity: 0.8;
+      cursor: pointer;
+      transition: fill 0.3s;
+      filter: drop-shadow(0 0 5px #a6b1e1);
+    }
+    .wave:hover {
+      fill: #4a69bd;
+      filter: drop-shadow(0 0 8px #6688ff);
+    }
+
+    #wave2 {
+      animation-direction: reverse;
+      animation-duration: 5s;
+      opacity: 0.6;
+    }
+    #wave3 {
+      animation-duration: 7s;
+      opacity: 0.35;
+    }
+
+    @keyframes wave {
+      to { transform: translateX(-100%); }
+    }
+  </style>
+
   <defs>
-    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#6a11cb">
-        <animate attributeName="stop-color" values="#6a11cb;#2575fc;#6a11cb" dur="6s" repeatCount="indefinite"></animate>
-      </stop>
-      <stop offset="100%" stop-color="#2575fc">
-        <animate attributeName="stop-color" values="#2575fc;#6a11cb;#2575fc" dur="6s" repeatCount="indefinite"></animate>
-      </stop>
-    </linearGradient>
+    <path id="wave" d="M 0,10 
+      C 30,10 30,15 60,15 
+      90,15 90,10 120,10 
+      150,10 150,15 180,15 
+      210,15 210,10 240,10 
+      v 28 h -240 z" />
   </defs>
 
-  <!-- Fundo escuro simples -->
-  <rect width="1000" height="200" fill="#121212" rx="15"></rect>
+  <rect class="headerRect" width="80" height="7.2" rx="1" x="15" y="23" />
 
-  <!-- Texto com preenchimento gradiente animado -->
-  <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" font-size="52" font-family="Segoe UI, sans-serif" fill="url(#grad)" font-weight="bold">
-    Rafael Utiyama
+  <use id="wave3" class="wave" xlink:href="#wave" x="0" y="3" />
+  <use id="wave2" class="wave" xlink:href="#wave" x="0" y="5" />
+
+  <path id="nameTyping" d="m10,14 h0">
+    <animate attributeName="d" from="m10,14 h0" to="m10,14 h90" dur="4.2s" begin="0s" fill="freeze" />
+  </path>
+
+  <text font-family="Courier New" font-size="6" fill="#f0f8ff" font-weight="bold" letter-spacing="1" style="filter: drop-shadow(0 0 4px #a6b1e1);">
+    <textPath xlink:href="#nameTyping">Rafael Utiyama</textPath>
   </text>
+
 </svg>
