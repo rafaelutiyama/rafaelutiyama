@@ -29,3 +29,7 @@
 Obrigado pela visita!  
 Sinta-se à vontade para entrar em contato ou colaborar em projetos.  
 Vamos construir coisas incríveis juntos! 🚀
+
+---
+
+📄 [Meu Currículo](curriculo.pdf)
