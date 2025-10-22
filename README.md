@@ -32,4 +32,4 @@ Vamos construir coisas incríveis juntos! 🚀
 
 ---
 
-📄 [Meu Currículo](curriculo.pdf)
+📄 [Meu Currículo](CurricuRafaelUtiyama.pdf)
